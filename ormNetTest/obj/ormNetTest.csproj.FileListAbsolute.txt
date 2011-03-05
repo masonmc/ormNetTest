@@ -1,0 +1,4 @@
+C:\mycode\ormNetTest\ormNetTest\obj\Debug\ResolveAssemblyReference.cache
+C:\mycode\ormNetTest\ormNetTest\obj\Debug\ormNetTest.Form1.resources
+C:\mycode\ormNetTest\ormNetTest\obj\Debug\ormNetTest.Properties.Resources.resources
+C:\mycode\ormNetTest\ormNetTest\obj\Debug\ormNetTest.csproj.GenerateResource.Cache

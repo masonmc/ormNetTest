@@ -1,0 +1,6 @@
+C:\mycode\ormNetTest\BuildWolfSandboxBiz\bin\Debug\BuildWolfSandboxBiz.dll
+C:\mycode\ormNetTest\BuildWolfSandboxBiz\bin\Debug\BuildWolfSandboxBiz.pdb
+C:\mycode\ormNetTest\BuildWolfSandboxBiz\bin\Debug\OrmLib.dll
+C:\mycode\ormNetTest\BuildWolfSandboxBiz\obj\Debug\ResolveAssemblyReference.cache
+C:\mycode\ormNetTest\BuildWolfSandboxBiz\obj\Debug\BuildWolfSandboxBiz.dll
+C:\mycode\ormNetTest\BuildWolfSandboxBiz\obj\Debug\BuildWolfSandboxBiz.pdb

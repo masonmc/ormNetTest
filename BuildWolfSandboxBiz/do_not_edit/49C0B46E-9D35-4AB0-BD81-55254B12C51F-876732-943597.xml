@@ -1,0 +1,2384 @@
+<?xml version="1.0"?>
+<DataSet>
+  <xs:schema id="OrmDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="OrmDataSet" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="Column">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1000000" msdata:AutoIncrementStep="-1" type="xs:int" />
+                <xs:element name="FKTableID" type="xs:int" minOccurs="0" />
+                <xs:element name="Name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="200" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="FKDataTypeID" type="xs:int" minOccurs="0" />
+                <xs:element name="Length" type="xs:int" minOccurs="0" />
+                <xs:element name="PrimaryKey" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="SetAccessor" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="GetAccessor" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="RequiredForInstantiation" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="AccessorName" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Nullable">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="IsIdentity" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="IsReadOnly" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="DeclaredType" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Precision" type="xs:int" minOccurs="0" />
+                <xs:element name="id" type="xs:int" minOccurs="0" />
+                <xs:element name="fktableid" type="xs:int" minOccurs="0" />
+                <xs:element name="name" type="xs:string" minOccurs="0" />
+                <xs:element name="fkdatatypeid" type="xs:int" minOccurs="0" />
+                <xs:element name="length" type="xs:int" minOccurs="0" />
+                <xs:element name="primarykey" type="xs:string" minOccurs="0" />
+                <xs:element name="setaccessor" type="xs:string" minOccurs="0" />
+                <xs:element name="getaccessor" type="xs:string" minOccurs="0" />
+                <xs:element name="requiredforinstantiation" type="xs:string" minOccurs="0" />
+                <xs:element name="accessorname" type="xs:string" minOccurs="0" />
+                <xs:element name="nullable" type="xs:string" minOccurs="0" />
+                <xs:element name="isidentity" type="xs:string" minOccurs="0" />
+                <xs:element name="isreadonly" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Database">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1000000" msdata:AutoIncrementStep="-1" type="xs:int" />
+                <xs:element name="DatabaseName" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="DatabaseToken" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="id" type="xs:int" minOccurs="0" />
+                <xs:element name="databasename" type="xs:string" minOccurs="0" />
+                <xs:element name="databasetoken" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DataType">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1000000" msdata:AutoIncrementStep="-1" type="xs:int" />
+                <xs:element name="SqlType" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="NetType" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="XmlType" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="NetSqlType" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="SqlDbType" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="OracleDbType" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="OracleType" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="id" type="xs:int" minOccurs="0" />
+                <xs:element name="sqltype" type="xs:string" minOccurs="0" />
+                <xs:element name="nettype" type="xs:string" minOccurs="0" />
+                <xs:element name="xmltype" type="xs:string" minOccurs="0" />
+                <xs:element name="netsqltype" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Param">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1000000" msdata:AutoIncrementStep="-1" type="xs:int" />
+                <xs:element name="FKProcedureID" type="xs:int" minOccurs="0" />
+                <xs:element name="Name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="200" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="FKDataTypeID" type="xs:int" minOccurs="0" />
+                <xs:element name="Length" type="xs:int" minOccurs="0" />
+                <xs:element name="IsOutputParam" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="id" type="xs:int" minOccurs="0" />
+                <xs:element name="fkprocedureid" type="xs:int" minOccurs="0" />
+                <xs:element name="name" type="xs:string" minOccurs="0" />
+                <xs:element name="fkdatatypeid" type="xs:int" minOccurs="0" />
+                <xs:element name="length" type="xs:int" minOccurs="0" />
+                <xs:element name="isoutputparam" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Procedure">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1000000" msdata:AutoIncrementStep="-1" type="xs:int" />
+                <xs:element name="Name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="200" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="FKDatabaseID" type="xs:int" minOccurs="0" />
+                <xs:element name="id" type="xs:int" minOccurs="0" />
+                <xs:element name="fkdatabaseid" type="xs:int" minOccurs="0" />
+                <xs:element name="owner" type="xs:string" minOccurs="0" />
+                <xs:element name="name" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Relation">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1000000" msdata:AutoIncrementStep="-1" type="xs:int" />
+                <xs:element name="FKParentTableID" type="xs:int" minOccurs="0" />
+                <xs:element name="FKChildTableID" type="xs:int" minOccurs="0" />
+                <xs:element name="ForeignKeyColumnName" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="RelationshipType" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ChildAccessorName" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ParentAccessorName" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ChildSetAccessor" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ChildGetAccessor" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ParentSetAccessor" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ParentGetAccessor" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="IsMandatory" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="DisassociateChild">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="CascadeDelete">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="CascadeUpdate">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="EnforceConstraint">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="NullableFKey">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="id" type="xs:int" minOccurs="0" />
+                <xs:element name="fkparenttableid" type="xs:int" minOccurs="0" />
+                <xs:element name="fkchildtableid" type="xs:int" minOccurs="0" />
+                <xs:element name="foreignkeycolumnname" type="xs:string" minOccurs="0" />
+                <xs:element name="parentconstraintname" type="xs:string" minOccurs="0" />
+                <xs:element name="childconstraintname" type="xs:string" minOccurs="0" />
+                <xs:element name="relationshiptype" type="xs:string" minOccurs="0" />
+                <xs:element name="childaccessorname" type="xs:string" minOccurs="0" />
+                <xs:element name="parentaccessorname" type="xs:string" minOccurs="0" />
+                <xs:element name="childsetaccessor" type="xs:string" minOccurs="0" />
+                <xs:element name="childgetaccessor" type="xs:string" minOccurs="0" />
+                <xs:element name="parentsetaccessor" type="xs:string" minOccurs="0" />
+                <xs:element name="parentgetaccessor" type="xs:string" minOccurs="0" />
+                <xs:element name="ismandatory" type="xs:string" minOccurs="0" />
+                <xs:element name="disassociatechild" type="xs:string" minOccurs="0" />
+                <xs:element name="cascadeupdate" type="xs:string" minOccurs="0" />
+                <xs:element name="cascadedelete" type="xs:string" minOccurs="0" />
+                <xs:element name="enforceconstraint" type="xs:string" minOccurs="0" />
+                <xs:element name="nullablefkey" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RelationColumn">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1000000" msdata:AutoIncrementStep="-1" type="xs:int" />
+                <xs:element name="FKRelationID" type="xs:int" minOccurs="0" />
+                <xs:element name="ParentColumnName" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="200" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ChildColumnName" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="200" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="OrdinalPosition" type="xs:int" minOccurs="0" />
+                <xs:element name="NullableFKey" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ChildColumnIsPrimaryKey" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="id" type="xs:int" minOccurs="0" />
+                <xs:element name="fkrelationid" type="xs:int" minOccurs="0" />
+                <xs:element name="parentcolumnname" type="xs:string" minOccurs="0" />
+                <xs:element name="childcolumnname" type="xs:string" minOccurs="0" />
+                <xs:element name="ordinalposition" type="xs:int" minOccurs="0" />
+                <xs:element name="nullablefkey" type="xs:string" minOccurs="0" />
+                <xs:element name="childcolumnisprimarykey" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1000000" msdata:AutoIncrementStep="-1" type="xs:int" />
+                <xs:element name="FKDatabaseID" type="xs:int" minOccurs="0" />
+                <xs:element name="Name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="AllowNew" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="IsLookupTable">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="GenerateCodeFor" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="AccessorName" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="GenerateSampleCode" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="5" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="InsertOrder" type="xs:int" />
+                <xs:element name="id" type="xs:int" minOccurs="0" />
+                <xs:element name="fkdatabaseid" type="xs:int" minOccurs="0" />
+                <xs:element name="owner" type="xs:string" minOccurs="0" />
+                <xs:element name="name" type="xs:string" minOccurs="0" />
+                <xs:element name="allownew" type="xs:string" minOccurs="0" />
+                <xs:element name="islookuptable" type="xs:string" minOccurs="0" />
+                <xs:element name="generatecodefor" type="xs:string" minOccurs="0" />
+                <xs:element name="accessorname" type="xs:string" minOccurs="0" />
+                <xs:element name="generatesamplecode" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Column" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Database_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Database" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="DataType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//DataType" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Param_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Param" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Procedure_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Procedure" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Relation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Relation" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="RelationColumn_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//RelationColumn" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Table_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Table" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:keyref name="FKDatabaseIDTable" refer="Database_Constraint1">
+        <xs:selector xpath=".//Table" />
+        <xs:field xpath="FKDatabaseID" />
+      </xs:keyref>
+      <xs:keyref name="FKRelationIDRelationColumn" refer="Relation_Constraint1" msdata:UpdateRule="None" msdata:DeleteRule="None">
+        <xs:selector xpath=".//RelationColumn" />
+        <xs:field xpath="FKRelationID" />
+      </xs:keyref>
+      <xs:keyref name="FKChildTableIDRelation" refer="Table_Constraint1" msdata:UpdateRule="None" msdata:DeleteRule="None">
+        <xs:selector xpath=".//Relation" />
+        <xs:field xpath="FKChildTableID" />
+      </xs:keyref>
+      <xs:keyref name="FKParentTableIDRelation" refer="Table_Constraint1" msdata:UpdateRule="None" msdata:DeleteRule="None">
+        <xs:selector xpath=".//Relation" />
+        <xs:field xpath="FKParentTableID" />
+      </xs:keyref>
+      <xs:keyref name="FKDatabaseIDProcedure" refer="Database_Constraint1">
+        <xs:selector xpath=".//Procedure" />
+        <xs:field xpath="FKDatabaseID" />
+      </xs:keyref>
+      <xs:keyref name="FKDataTypeIDParam" refer="DataType_Constraint1">
+        <xs:selector xpath=".//Param" />
+        <xs:field xpath="FKDataTypeID" />
+      </xs:keyref>
+      <xs:keyref name="FKProcedureIDParam" refer="Procedure_Constraint1">
+        <xs:selector xpath=".//Param" />
+        <xs:field xpath="FKProcedureID" />
+      </xs:keyref>
+      <xs:keyref name="FKTableIDColumn" refer="Table_Constraint1" msdata:UpdateRule="None" msdata:DeleteRule="None">
+        <xs:selector xpath=".//Column" />
+        <xs:field xpath="FKTableID" />
+      </xs:keyref>
+      <xs:keyref name="FKDataTypeIDColumn" refer="DataType_Constraint1" msdata:UpdateRule="None" msdata:DeleteRule="None">
+        <xs:selector xpath=".//Column" />
+        <xs:field xpath="FKDataTypeID" />
+      </xs:keyref>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <OrmDataSet>
+      <Column diffgr:id="Column1" msdata:rowOrder="0">
+        <ID>1</ID>
+        <FKTableID>1</FKTableID>
+        <Name>id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>true</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>id</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>1</id>
+        <fktableid>1</fktableid>
+        <name>id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>true</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>id</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column2" msdata:rowOrder="1">
+        <ID>2</ID>
+        <FKTableID>1</FKTableID>
+        <Name>PlatformName</Name>
+        <FKDataTypeID>11</FKDataTypeID>
+        <Length>20</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>false</RequiredForInstantiation>
+        <AccessorName>PlatformName</AccessorName>
+        <Nullable>true</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>2</id>
+        <fktableid>1</fktableid>
+        <name>PlatformName</name>
+        <fkdatatypeid>11</fkdatatypeid>
+        <length>20</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>false</requiredforinstantiation>
+        <accessorname>PlatformName</accessorname>
+        <nullable>true</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column3" msdata:rowOrder="2">
+        <ID>3</ID>
+        <FKTableID>2</FKTableID>
+        <Name>id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>true</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>id</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>3</id>
+        <fktableid>2</fktableid>
+        <name>id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>true</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>id</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column4" msdata:rowOrder="3">
+        <ID>4</ID>
+        <FKTableID>2</FKTableID>
+        <Name>GroupName</Name>
+        <FKDataTypeID>24</FKDataTypeID>
+        <Length>-1</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>GroupName</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>4</id>
+        <fktableid>2</fktableid>
+        <name>GroupName</name>
+        <fkdatatypeid>24</fkdatatypeid>
+        <length>-1</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>GroupName</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column5" msdata:rowOrder="4">
+        <ID>5</ID>
+        <FKTableID>3</FKTableID>
+        <Name>id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>true</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>id</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>5</id>
+        <fktableid>3</fktableid>
+        <name>id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>true</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>id</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column6" msdata:rowOrder="5">
+        <ID>6</ID>
+        <FKTableID>3</FKTableID>
+        <Name>WindowsLoginName</Name>
+        <FKDataTypeID>24</FKDataTypeID>
+        <Length>-1</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>WindowsLoginName</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>6</id>
+        <fktableid>3</fktableid>
+        <name>WindowsLoginName</name>
+        <fkdatatypeid>24</fkdatatypeid>
+        <length>-1</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>WindowsLoginName</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column7" msdata:rowOrder="6">
+        <ID>7</ID>
+        <FKTableID>3</FKTableID>
+        <Name>GroupID</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>false</RequiredForInstantiation>
+        <AccessorName>GroupID</AccessorName>
+        <Nullable>true</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>7</id>
+        <fktableid>3</fktableid>
+        <name>GroupID</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>false</requiredforinstantiation>
+        <accessorname>GroupID</accessorname>
+        <nullable>true</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column8" msdata:rowOrder="7">
+        <ID>8</ID>
+        <FKTableID>4</FKTableID>
+        <Name>id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>true</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>id</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>8</id>
+        <fktableid>4</fktableid>
+        <name>id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>true</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>id</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column9" msdata:rowOrder="8">
+        <ID>9</ID>
+        <FKTableID>4</FKTableID>
+        <Name>StatusName</Name>
+        <FKDataTypeID>24</FKDataTypeID>
+        <Length>50</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>StatusName</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>9</id>
+        <fktableid>4</fktableid>
+        <name>StatusName</name>
+        <fkdatatypeid>24</fkdatatypeid>
+        <length>50</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>StatusName</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column10" msdata:rowOrder="9">
+        <ID>10</ID>
+        <FKTableID>4</FKTableID>
+        <Name>StatusDescription</Name>
+        <FKDataTypeID>11</FKDataTypeID>
+        <Length>20</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>false</RequiredForInstantiation>
+        <AccessorName>StatusDescription</AccessorName>
+        <Nullable>true</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>10</id>
+        <fktableid>4</fktableid>
+        <name>StatusDescription</name>
+        <fkdatatypeid>11</fkdatatypeid>
+        <length>20</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>false</requiredforinstantiation>
+        <accessorname>StatusDescription</accessorname>
+        <nullable>true</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column11" msdata:rowOrder="10">
+        <ID>11</ID>
+        <FKTableID>5</FKTableID>
+        <Name>id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>true</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>id</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>11</id>
+        <fktableid>5</fktableid>
+        <name>id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>true</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>id</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column12" msdata:rowOrder="11">
+        <ID>12</ID>
+        <FKTableID>5</FKTableID>
+        <Name>CommentText</Name>
+        <FKDataTypeID>24</FKDataTypeID>
+        <Length>-1</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>false</RequiredForInstantiation>
+        <AccessorName>CommentText</AccessorName>
+        <Nullable>true</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>12</id>
+        <fktableid>5</fktableid>
+        <name>CommentText</name>
+        <fkdatatypeid>24</fkdatatypeid>
+        <length>-1</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>false</requiredforinstantiation>
+        <accessorname>CommentText</accessorname>
+        <nullable>true</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column13" msdata:rowOrder="12">
+        <ID>13</ID>
+        <FKTableID>5</FKTableID>
+        <Name>CommentTime</Name>
+        <FKDataTypeID>5</FKDataTypeID>
+        <Length>8</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>CommentTime</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>13</id>
+        <fktableid>5</fktableid>
+        <name>CommentTime</name>
+        <fkdatatypeid>5</fkdatatypeid>
+        <length>8</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>CommentTime</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column14" msdata:rowOrder="13">
+        <ID>14</ID>
+        <FKTableID>5</FKTableID>
+        <Name>AuthorUserID</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>false</RequiredForInstantiation>
+        <AccessorName>AuthorUserID</AccessorName>
+        <Nullable>true</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>14</id>
+        <fktableid>5</fktableid>
+        <name>AuthorUserID</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>false</requiredforinstantiation>
+        <accessorname>AuthorUserID</accessorname>
+        <nullable>true</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column15" msdata:rowOrder="14">
+        <ID>15</ID>
+        <FKTableID>6</FKTableID>
+        <Name>id</Name>
+        <FKDataTypeID>24</FKDataTypeID>
+        <Length>50</Length>
+        <PrimaryKey>true</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>id</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>15</id>
+        <fktableid>6</fktableid>
+        <name>id</name>
+        <fkdatatypeid>24</fkdatatypeid>
+        <length>50</length>
+        <primarykey>true</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>id</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column16" msdata:rowOrder="15">
+        <ID>16</ID>
+        <FKTableID>6</FKTableID>
+        <Name>GroupsAllowedToSet</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>false</RequiredForInstantiation>
+        <AccessorName>GroupsAllowedToSet</AccessorName>
+        <Nullable>true</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>16</id>
+        <fktableid>6</fktableid>
+        <name>GroupsAllowedToSet</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>false</requiredforinstantiation>
+        <accessorname>GroupsAllowedToSet</accessorname>
+        <nullable>true</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column17" msdata:rowOrder="16">
+        <ID>17</ID>
+        <FKTableID>6</FKTableID>
+        <Name>TagName</Name>
+        <FKDataTypeID>24</FKDataTypeID>
+        <Length>256</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>TagName</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>17</id>
+        <fktableid>6</fktableid>
+        <name>TagName</name>
+        <fkdatatypeid>24</fkdatatypeid>
+        <length>256</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>TagName</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column18" msdata:rowOrder="17">
+        <ID>18</ID>
+        <FKTableID>6</FKTableID>
+        <Name>TagDescription</Name>
+        <FKDataTypeID>24</FKDataTypeID>
+        <Length>-1</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>false</RequiredForInstantiation>
+        <AccessorName>TagDescription</AccessorName>
+        <Nullable>true</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>18</id>
+        <fktableid>6</fktableid>
+        <name>TagDescription</name>
+        <fkdatatypeid>24</fkdatatypeid>
+        <length>-1</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>false</requiredforinstantiation>
+        <accessorname>TagDescription</accessorname>
+        <nullable>true</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column19" msdata:rowOrder="18">
+        <ID>19</ID>
+        <FKTableID>7</FKTableID>
+        <Name>id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>true</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>id</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>19</id>
+        <fktableid>7</fktableid>
+        <name>id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>true</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>id</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column20" msdata:rowOrder="19">
+        <ID>20</ID>
+        <FKTableID>7</FKTableID>
+        <Name>Status</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>false</RequiredForInstantiation>
+        <AccessorName>Status</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>20</id>
+        <fktableid>7</fktableid>
+        <name>Status</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>false</requiredforinstantiation>
+        <accessorname>Status</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column21" msdata:rowOrder="20">
+        <ID>21</ID>
+        <FKTableID>7</FKTableID>
+        <Name>CreationDate</Name>
+        <FKDataTypeID>5</FKDataTypeID>
+        <Length>8</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>CreationDate</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>21</id>
+        <fktableid>7</fktableid>
+        <name>CreationDate</name>
+        <fkdatatypeid>5</fkdatatypeid>
+        <length>8</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>CreationDate</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column22" msdata:rowOrder="21">
+        <ID>22</ID>
+        <FKTableID>7</FKTableID>
+        <Name>CreatedBy</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>false</RequiredForInstantiation>
+        <AccessorName>CreatedBy</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>22</id>
+        <fktableid>7</fktableid>
+        <name>CreatedBy</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>false</requiredforinstantiation>
+        <accessorname>CreatedBy</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column23" msdata:rowOrder="22">
+        <ID>23</ID>
+        <FKTableID>7</FKTableID>
+        <Name>CreatedByComputerName</Name>
+        <FKDataTypeID>24</FKDataTypeID>
+        <Length>256</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>CreatedByComputerName</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>23</id>
+        <fktableid>7</fktableid>
+        <name>CreatedByComputerName</name>
+        <fkdatatypeid>24</fkdatatypeid>
+        <length>256</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>CreatedByComputerName</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column24" msdata:rowOrder="23">
+        <ID>24</ID>
+        <FKTableID>7</FKTableID>
+        <Name>CreatorsLocalBranchRoot</Name>
+        <FKDataTypeID>24</FKDataTypeID>
+        <Length>-1</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>CreatorsLocalBranchRoot</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>24</id>
+        <fktableid>7</fktableid>
+        <name>CreatorsLocalBranchRoot</name>
+        <fkdatatypeid>24</fkdatatypeid>
+        <length>-1</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>CreatorsLocalBranchRoot</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column25" msdata:rowOrder="24">
+        <ID>25</ID>
+        <FKTableID>8</FKTableID>
+        <Name>name</Name>
+        <FKDataTypeID>14</FKDataTypeID>
+        <Length>256</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>name</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>25</id>
+        <fktableid>8</fktableid>
+        <name>name</name>
+        <fkdatatypeid>14</fkdatatypeid>
+        <length>256</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>name</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column26" msdata:rowOrder="25">
+        <ID>26</ID>
+        <FKTableID>8</FKTableID>
+        <Name>principal_id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>principal_id</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>26</id>
+        <fktableid>8</fktableid>
+        <name>principal_id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>principal_id</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column27" msdata:rowOrder="26">
+        <ID>27</ID>
+        <FKTableID>8</FKTableID>
+        <Name>diagram_id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>true</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>true</RequiredForInstantiation>
+        <AccessorName>diagram_id</AccessorName>
+        <Nullable>false</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>27</id>
+        <fktableid>8</fktableid>
+        <name>diagram_id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>true</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>true</requiredforinstantiation>
+        <accessorname>diagram_id</accessorname>
+        <nullable>false</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column28" msdata:rowOrder="27">
+        <ID>28</ID>
+        <FKTableID>8</FKTableID>
+        <Name>version</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>false</RequiredForInstantiation>
+        <AccessorName>version</AccessorName>
+        <Nullable>true</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>28</id>
+        <fktableid>8</fktableid>
+        <name>version</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>false</requiredforinstantiation>
+        <accessorname>version</accessorname>
+        <nullable>true</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Column diffgr:id="Column29" msdata:rowOrder="28">
+        <ID>29</ID>
+        <FKTableID>8</FKTableID>
+        <Name>definition</Name>
+        <FKDataTypeID>23</FKDataTypeID>
+        <Length>-1</Length>
+        <PrimaryKey>false</PrimaryKey>
+        <SetAccessor>public virtual</SetAccessor>
+        <GetAccessor>public virtual</GetAccessor>
+        <RequiredForInstantiation>false</RequiredForInstantiation>
+        <AccessorName>definition</AccessorName>
+        <Nullable>true</Nullable>
+        <IsIdentity>false</IsIdentity>
+        <IsReadOnly>false</IsReadOnly>
+        <id>29</id>
+        <fktableid>8</fktableid>
+        <name>definition</name>
+        <fkdatatypeid>23</fkdatatypeid>
+        <length>-1</length>
+        <primarykey>false</primarykey>
+        <setaccessor>public virtual</setaccessor>
+        <getaccessor>public virtual</getaccessor>
+        <requiredforinstantiation>false</requiredforinstantiation>
+        <accessorname>definition</accessorname>
+        <nullable>true</nullable>
+        <isidentity>false</isidentity>
+        <isreadonly>false</isreadonly>
+      </Column>
+      <Database diffgr:id="Database1" msdata:rowOrder="0">
+        <ID>1</ID>
+        <DatabaseName>BuildWolfSandbox</DatabaseName>
+        <DatabaseToken>49C0B46E-9D35-4AB0-BD81-55254B12C51F-876732-943597</DatabaseToken>
+        <id>1</id>
+        <databasename>BuildWolfSandbox</databasename>
+        <databasetoken>49C0B46E-9D35-4AB0-BD81-55254B12C51F-876732-943597</databasetoken>
+      </Database>
+      <DataType diffgr:id="DataType1" msdata:rowOrder="0">
+        <ID>1</ID>
+        <SqlType>bigint</SqlType>
+        <NetType>System.Int64</NetType>
+        <XmlType>xsd:long</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlInt64</NetSqlType>
+        <id>1</id>
+        <sqltype>bigint</sqltype>
+        <nettype>System.Int64</nettype>
+        <xmltype>xsd:long</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlInt64</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType2" msdata:rowOrder="1">
+        <ID>2</ID>
+        <SqlType>binary</SqlType>
+        <NetType>System.Byte[]</NetType>
+        <XmlType>xsd:base64Binary</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlBinary</NetSqlType>
+        <id>2</id>
+        <sqltype>binary</sqltype>
+        <nettype>System.Byte[]</nettype>
+        <xmltype>xsd:base64Binary</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlBinary</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType3" msdata:rowOrder="2">
+        <ID>3</ID>
+        <SqlType>bit</SqlType>
+        <NetType>System.Boolean</NetType>
+        <XmlType>xsd:boolean</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlBoolean</NetSqlType>
+        <id>3</id>
+        <sqltype>bit</sqltype>
+        <nettype>System.Boolean</nettype>
+        <xmltype>xsd:boolean</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlBoolean</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType4" msdata:rowOrder="3">
+        <ID>4</ID>
+        <SqlType>char</SqlType>
+        <NetType>System.String</NetType>
+        <XmlType>xsd:string</XmlType>
+        <NetSqlType>System.String</NetSqlType>
+        <id>4</id>
+        <sqltype>char</sqltype>
+        <nettype>System.String</nettype>
+        <xmltype>xsd:string</xmltype>
+        <netsqltype>System.String</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType5" msdata:rowOrder="4">
+        <ID>5</ID>
+        <SqlType>datetime</SqlType>
+        <NetType>System.DateTime</NetType>
+        <XmlType>xsd:dateTime</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlDateTime</NetSqlType>
+        <id>5</id>
+        <sqltype>datetime</sqltype>
+        <nettype>System.DateTime</nettype>
+        <xmltype>xsd:dateTime</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlDateTime</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType6" msdata:rowOrder="5">
+        <ID>6</ID>
+        <SqlType>decimal</SqlType>
+        <NetType>System.Decimal</NetType>
+        <XmlType>xsd:decimal</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlDecimal</NetSqlType>
+        <id>6</id>
+        <sqltype>decimal</sqltype>
+        <nettype>System.Decimal</nettype>
+        <xmltype>xsd:decimal</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlDecimal</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType7" msdata:rowOrder="6">
+        <ID>7</ID>
+        <SqlType>float</SqlType>
+        <NetType>System.Double</NetType>
+        <XmlType>xsd:float</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlDouble</NetSqlType>
+        <id>7</id>
+        <sqltype>float</sqltype>
+        <nettype>System.Double</nettype>
+        <xmltype>xsd:float</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlDouble</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType8" msdata:rowOrder="7">
+        <ID>8</ID>
+        <SqlType>image</SqlType>
+        <NetType>System.Byte[]</NetType>
+        <XmlType>xsd:base64Binary</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlBinary</NetSqlType>
+        <id>8</id>
+        <sqltype>image</sqltype>
+        <nettype>System.Byte[]</nettype>
+        <xmltype>xsd:base64Binary</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlBinary</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType9" msdata:rowOrder="8">
+        <ID>9</ID>
+        <SqlType>int</SqlType>
+        <NetType>System.Int32</NetType>
+        <XmlType>xsd:int</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlInt32</NetSqlType>
+        <id>9</id>
+        <sqltype>int</sqltype>
+        <nettype>System.Int32</nettype>
+        <xmltype>xsd:int</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlInt32</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType10" msdata:rowOrder="9">
+        <ID>10</ID>
+        <SqlType>money</SqlType>
+        <NetType>System.Decimal</NetType>
+        <XmlType>xsd:decimal</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlMoney</NetSqlType>
+        <id>10</id>
+        <sqltype>money</sqltype>
+        <nettype>System.Decimal</nettype>
+        <xmltype>xsd:decimal</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlMoney</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType11" msdata:rowOrder="10">
+        <ID>11</ID>
+        <SqlType>nchar</SqlType>
+        <NetType>System.String</NetType>
+        <XmlType>xsd:string</XmlType>
+        <NetSqlType>System.String</NetSqlType>
+        <id>11</id>
+        <sqltype>nchar</sqltype>
+        <nettype>System.String</nettype>
+        <xmltype>xsd:string</xmltype>
+        <netsqltype>System.String</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType12" msdata:rowOrder="11">
+        <ID>12</ID>
+        <SqlType>ntext</SqlType>
+        <NetType>System.String</NetType>
+        <XmlType>xsd:string</XmlType>
+        <NetSqlType>System.String</NetSqlType>
+        <id>12</id>
+        <sqltype>ntext</sqltype>
+        <nettype>System.String</nettype>
+        <xmltype>xsd:string</xmltype>
+        <netsqltype>System.String</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType13" msdata:rowOrder="12">
+        <ID>13</ID>
+        <SqlType>numeric</SqlType>
+        <NetType>System.Decimal</NetType>
+        <XmlType>xsd:decimal</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlDecimal</NetSqlType>
+        <id>13</id>
+        <sqltype>numeric</sqltype>
+        <nettype>System.Decimal</nettype>
+        <xmltype>xsd:decimal</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlDecimal</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType14" msdata:rowOrder="13">
+        <ID>14</ID>
+        <SqlType>nvarchar</SqlType>
+        <NetType>System.String</NetType>
+        <XmlType>xsd:string</XmlType>
+        <NetSqlType>System.String</NetSqlType>
+        <id>14</id>
+        <sqltype>nvarchar</sqltype>
+        <nettype>System.String</nettype>
+        <xmltype>xsd:string</xmltype>
+        <netsqltype>System.String</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType15" msdata:rowOrder="14">
+        <ID>15</ID>
+        <SqlType>real</SqlType>
+        <NetType>System.Single</NetType>
+        <XmlType>xsd:float</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlSingle</NetSqlType>
+        <id>15</id>
+        <sqltype>real</sqltype>
+        <nettype>System.Single</nettype>
+        <xmltype>xsd:float</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlSingle</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType16" msdata:rowOrder="15">
+        <ID>16</ID>
+        <SqlType>smalldatetime</SqlType>
+        <NetType>System.DateTime</NetType>
+        <XmlType>xsd:dateTime</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlDateTime</NetSqlType>
+        <id>16</id>
+        <sqltype>smalldatetime</sqltype>
+        <nettype>System.DateTime</nettype>
+        <xmltype>xsd:dateTime</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlDateTime</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType17" msdata:rowOrder="16">
+        <ID>17</ID>
+        <SqlType>smallint</SqlType>
+        <NetType>System.Int16</NetType>
+        <XmlType>xsd:int</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlInt16</NetSqlType>
+        <id>17</id>
+        <sqltype>smallint</sqltype>
+        <nettype>System.Int16</nettype>
+        <xmltype>xsd:int</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlInt16</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType18" msdata:rowOrder="17">
+        <ID>18</ID>
+        <SqlType>smallmoney</SqlType>
+        <NetType>System.Decimal</NetType>
+        <XmlType>xsd:decimal</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlMoney</NetSqlType>
+        <id>18</id>
+        <sqltype>smallmoney</sqltype>
+        <nettype>System.Decimal</nettype>
+        <xmltype>xsd:decimal</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlMoney</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType19" msdata:rowOrder="18">
+        <ID>19</ID>
+        <SqlType>text</SqlType>
+        <NetType>System.String</NetType>
+        <XmlType>xsd:string</XmlType>
+        <NetSqlType>System.String</NetSqlType>
+        <id>19</id>
+        <sqltype>text</sqltype>
+        <nettype>System.String</nettype>
+        <xmltype>xsd:string</xmltype>
+        <netsqltype>System.String</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType20" msdata:rowOrder="19">
+        <ID>20</ID>
+        <SqlType>timestamp</SqlType>
+        <NetType>System.Byte[]</NetType>
+        <XmlType>xsd:base64Binary</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlBinary</NetSqlType>
+        <id>20</id>
+        <sqltype>timestamp</sqltype>
+        <nettype>System.Byte[]</nettype>
+        <xmltype>xsd:base64Binary</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlBinary</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType21" msdata:rowOrder="20">
+        <ID>21</ID>
+        <SqlType>tinyint</SqlType>
+        <NetType>System.Byte</NetType>
+        <XmlType>xsd:int</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlByte</NetSqlType>
+        <id>21</id>
+        <sqltype>tinyint</sqltype>
+        <nettype>System.Byte</nettype>
+        <xmltype>xsd:int</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlByte</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType22" msdata:rowOrder="21">
+        <ID>22</ID>
+        <SqlType>uniqueidentifier</SqlType>
+        <NetType>System.Guid</NetType>
+        <XmlType>xsd:string</XmlType>
+        <NetSqlType>System.Guid</NetSqlType>
+        <id>22</id>
+        <sqltype>uniqueidentifier</sqltype>
+        <nettype>System.Guid</nettype>
+        <xmltype>xsd:string</xmltype>
+        <netsqltype>System.Guid</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType23" msdata:rowOrder="22">
+        <ID>23</ID>
+        <SqlType>varbinary</SqlType>
+        <NetType>System.Byte[]</NetType>
+        <XmlType>xsd:base64Binary</XmlType>
+        <NetSqlType>System.Data.SqlTypes.SqlBinary</NetSqlType>
+        <id>23</id>
+        <sqltype>varbinary</sqltype>
+        <nettype>System.Byte[]</nettype>
+        <xmltype>xsd:base64Binary</xmltype>
+        <netsqltype>System.Data.SqlTypes.SqlBinary</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType24" msdata:rowOrder="23">
+        <ID>24</ID>
+        <SqlType>varchar</SqlType>
+        <NetType>System.String</NetType>
+        <XmlType>xsd:string</XmlType>
+        <NetSqlType>System.String</NetSqlType>
+        <id>24</id>
+        <sqltype>varchar</sqltype>
+        <nettype>System.String</nettype>
+        <xmltype>xsd:string</xmltype>
+        <netsqltype>System.String</netsqltype>
+      </DataType>
+      <DataType diffgr:id="DataType25" msdata:rowOrder="24">
+        <ID>25</ID>
+        <SqlType>sql_variant</SqlType>
+        <NetType>System.Object</NetType>
+        <XmlType>xsd:string</XmlType>
+        <NetSqlType>System.Object</NetSqlType>
+        <id>25</id>
+        <sqltype>sql_variant</sqltype>
+        <nettype>System.Object</nettype>
+        <xmltype>xsd:string</xmltype>
+        <netsqltype>System.Object</netsqltype>
+      </DataType>
+      <Param diffgr:id="Param1" msdata:rowOrder="0">
+        <ID>1</ID>
+        <FKProcedureID>1</FKProcedureID>
+        <Name>@diagramname</Name>
+        <FKDataTypeID>14</FKDataTypeID>
+        <Length>256</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>1</id>
+        <fkprocedureid>1</fkprocedureid>
+        <name>@diagramname</name>
+        <fkdatatypeid>14</fkdatatypeid>
+        <length>256</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param2" msdata:rowOrder="1">
+        <ID>2</ID>
+        <FKProcedureID>1</FKProcedureID>
+        <Name>@owner_id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>2</id>
+        <fkprocedureid>1</fkprocedureid>
+        <name>@owner_id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param3" msdata:rowOrder="2">
+        <ID>3</ID>
+        <FKProcedureID>2</FKProcedureID>
+        <Name>@diagramname</Name>
+        <FKDataTypeID>14</FKDataTypeID>
+        <Length>256</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>3</id>
+        <fkprocedureid>2</fkprocedureid>
+        <name>@diagramname</name>
+        <fkdatatypeid>14</fkdatatypeid>
+        <length>256</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param4" msdata:rowOrder="3">
+        <ID>4</ID>
+        <FKProcedureID>2</FKProcedureID>
+        <Name>@owner_id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>4</id>
+        <fkprocedureid>2</fkprocedureid>
+        <name>@owner_id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param5" msdata:rowOrder="4">
+        <ID>5</ID>
+        <FKProcedureID>2</FKProcedureID>
+        <Name>@version</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>5</id>
+        <fkprocedureid>2</fkprocedureid>
+        <name>@version</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param6" msdata:rowOrder="5">
+        <ID>6</ID>
+        <FKProcedureID>2</FKProcedureID>
+        <Name>@definition</Name>
+        <FKDataTypeID>23</FKDataTypeID>
+        <Length>-1</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>6</id>
+        <fkprocedureid>2</fkprocedureid>
+        <name>@definition</name>
+        <fkdatatypeid>23</fkdatatypeid>
+        <length>-1</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param7" msdata:rowOrder="6">
+        <ID>7</ID>
+        <FKProcedureID>3</FKProcedureID>
+        <Name>@diagramname</Name>
+        <FKDataTypeID>14</FKDataTypeID>
+        <Length>256</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>7</id>
+        <fkprocedureid>3</fkprocedureid>
+        <name>@diagramname</name>
+        <fkdatatypeid>14</fkdatatypeid>
+        <length>256</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param8" msdata:rowOrder="7">
+        <ID>8</ID>
+        <FKProcedureID>3</FKProcedureID>
+        <Name>@owner_id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>8</id>
+        <fkprocedureid>3</fkprocedureid>
+        <name>@owner_id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param9" msdata:rowOrder="8">
+        <ID>9</ID>
+        <FKProcedureID>3</FKProcedureID>
+        <Name>@new_diagramname</Name>
+        <FKDataTypeID>14</FKDataTypeID>
+        <Length>256</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>9</id>
+        <fkprocedureid>3</fkprocedureid>
+        <name>@new_diagramname</name>
+        <fkdatatypeid>14</fkdatatypeid>
+        <length>256</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param10" msdata:rowOrder="9">
+        <ID>10</ID>
+        <FKProcedureID>4</FKProcedureID>
+        <Name>@diagramname</Name>
+        <FKDataTypeID>14</FKDataTypeID>
+        <Length>256</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>10</id>
+        <fkprocedureid>4</fkprocedureid>
+        <name>@diagramname</name>
+        <fkdatatypeid>14</fkdatatypeid>
+        <length>256</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param11" msdata:rowOrder="10">
+        <ID>11</ID>
+        <FKProcedureID>4</FKProcedureID>
+        <Name>@owner_id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>11</id>
+        <fkprocedureid>4</fkprocedureid>
+        <name>@owner_id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param12" msdata:rowOrder="11">
+        <ID>12</ID>
+        <FKProcedureID>4</FKProcedureID>
+        <Name>@version</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>12</id>
+        <fkprocedureid>4</fkprocedureid>
+        <name>@version</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param13" msdata:rowOrder="12">
+        <ID>13</ID>
+        <FKProcedureID>4</FKProcedureID>
+        <Name>@definition</Name>
+        <FKDataTypeID>23</FKDataTypeID>
+        <Length>-1</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>13</id>
+        <fkprocedureid>4</fkprocedureid>
+        <name>@definition</name>
+        <fkdatatypeid>23</fkdatatypeid>
+        <length>-1</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param14" msdata:rowOrder="13">
+        <ID>14</ID>
+        <FKProcedureID>5</FKProcedureID>
+        <Name>@diagramname</Name>
+        <FKDataTypeID>14</FKDataTypeID>
+        <Length>256</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>14</id>
+        <fkprocedureid>5</fkprocedureid>
+        <name>@diagramname</name>
+        <fkdatatypeid>14</fkdatatypeid>
+        <length>256</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param15" msdata:rowOrder="14">
+        <ID>15</ID>
+        <FKProcedureID>5</FKProcedureID>
+        <Name>@owner_id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>15</id>
+        <fkprocedureid>5</fkprocedureid>
+        <name>@owner_id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param16" msdata:rowOrder="15">
+        <ID>16</ID>
+        <FKProcedureID>7</FKProcedureID>
+        <Name>@diagramname</Name>
+        <FKDataTypeID>14</FKDataTypeID>
+        <Length>256</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>16</id>
+        <fkprocedureid>7</fkprocedureid>
+        <name>@diagramname</name>
+        <fkdatatypeid>14</fkdatatypeid>
+        <length>256</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Param diffgr:id="Param17" msdata:rowOrder="16">
+        <ID>17</ID>
+        <FKProcedureID>7</FKProcedureID>
+        <Name>@owner_id</Name>
+        <FKDataTypeID>9</FKDataTypeID>
+        <Length>4</Length>
+        <IsOutputParam>0</IsOutputParam>
+        <id>17</id>
+        <fkprocedureid>7</fkprocedureid>
+        <name>@owner_id</name>
+        <fkdatatypeid>9</fkdatatypeid>
+        <length>4</length>
+        <isoutputparam>0</isoutputparam>
+      </Param>
+      <Procedure diffgr:id="Procedure1" msdata:rowOrder="0">
+        <ID>1</ID>
+        <Name>sp_helpdiagramdefinition</Name>
+        <FKDatabaseID>1</FKDatabaseID>
+        <id>1</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>sp_helpdiagramdefinition</name>
+      </Procedure>
+      <Procedure diffgr:id="Procedure2" msdata:rowOrder="1">
+        <ID>2</ID>
+        <Name>sp_creatediagram</Name>
+        <FKDatabaseID>1</FKDatabaseID>
+        <id>2</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>sp_creatediagram</name>
+      </Procedure>
+      <Procedure diffgr:id="Procedure3" msdata:rowOrder="2">
+        <ID>3</ID>
+        <Name>sp_renamediagram</Name>
+        <FKDatabaseID>1</FKDatabaseID>
+        <id>3</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>sp_renamediagram</name>
+      </Procedure>
+      <Procedure diffgr:id="Procedure4" msdata:rowOrder="3">
+        <ID>4</ID>
+        <Name>sp_alterdiagram</Name>
+        <FKDatabaseID>1</FKDatabaseID>
+        <id>4</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>sp_alterdiagram</name>
+      </Procedure>
+      <Procedure diffgr:id="Procedure5" msdata:rowOrder="4">
+        <ID>5</ID>
+        <Name>sp_dropdiagram</Name>
+        <FKDatabaseID>1</FKDatabaseID>
+        <id>5</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>sp_dropdiagram</name>
+      </Procedure>
+      <Procedure diffgr:id="Procedure6" msdata:rowOrder="5">
+        <ID>6</ID>
+        <Name>sp_upgraddiagrams</Name>
+        <FKDatabaseID>1</FKDatabaseID>
+        <id>6</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>sp_upgraddiagrams</name>
+      </Procedure>
+      <Procedure diffgr:id="Procedure7" msdata:rowOrder="6">
+        <ID>7</ID>
+        <Name>sp_helpdiagrams</Name>
+        <FKDatabaseID>1</FKDatabaseID>
+        <id>7</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>sp_helpdiagrams</name>
+      </Procedure>
+      <Relation diffgr:id="Relation1" msdata:rowOrder="0">
+        <ID>1</ID>
+        <FKParentTableID>4</FKParentTableID>
+        <FKChildTableID>7</FKChildTableID>
+        <ForeignKeyColumnName>Status</ForeignKeyColumnName>
+        <RelationshipType>1:n</RelationshipType>
+        <ChildAccessorName>Builds</ChildAccessorName>
+        <ParentAccessorName>BuildStatus</ParentAccessorName>
+        <ChildSetAccessor>public virtual</ChildSetAccessor>
+        <ChildGetAccessor>public virtual</ChildGetAccessor>
+        <ParentSetAccessor>public virtual</ParentSetAccessor>
+        <ParentGetAccessor>public virtual</ParentGetAccessor>
+        <IsMandatory>true</IsMandatory>
+        <DisassociateChild>true</DisassociateChild>
+        <CascadeDelete>false</CascadeDelete>
+        <CascadeUpdate>false</CascadeUpdate>
+        <EnforceConstraint>true</EnforceConstraint>
+        <NullableFKey>false</NullableFKey>
+        <id>1</id>
+        <fkparenttableid>4</fkparenttableid>
+        <fkchildtableid>7</fkchildtableid>
+        <foreignkeycolumnname>Status</foreignkeycolumnname>
+        <parentconstraintname>PK_BuildStatus</parentconstraintname>
+        <childconstraintname>FK_Builds_BuildStatus</childconstraintname>
+        <relationshiptype>1:n</relationshiptype>
+        <childaccessorname>Builds</childaccessorname>
+        <parentaccessorname>BuildStatus</parentaccessorname>
+        <childsetaccessor>public virtual</childsetaccessor>
+        <childgetaccessor>public virtual</childgetaccessor>
+        <parentsetaccessor>public virtual</parentsetaccessor>
+        <parentgetaccessor>public virtual</parentgetaccessor>
+        <ismandatory>true</ismandatory>
+        <disassociatechild>true</disassociatechild>
+        <cascadeupdate>false</cascadeupdate>
+        <cascadedelete>false</cascadedelete>
+        <enforceconstraint>true</enforceconstraint>
+        <nullablefkey>false</nullablefkey>
+      </Relation>
+      <Relation diffgr:id="Relation2" msdata:rowOrder="1">
+        <ID>2</ID>
+        <FKParentTableID>3</FKParentTableID>
+        <FKChildTableID>7</FKChildTableID>
+        <ForeignKeyColumnName>CreatedBy</ForeignKeyColumnName>
+        <RelationshipType>1:n</RelationshipType>
+        <ChildAccessorName>Builds</ChildAccessorName>
+        <ParentAccessorName>Users</ParentAccessorName>
+        <ChildSetAccessor>public virtual</ChildSetAccessor>
+        <ChildGetAccessor>public virtual</ChildGetAccessor>
+        <ParentSetAccessor>public virtual</ParentSetAccessor>
+        <ParentGetAccessor>public virtual</ParentGetAccessor>
+        <IsMandatory>true</IsMandatory>
+        <DisassociateChild>true</DisassociateChild>
+        <CascadeDelete>false</CascadeDelete>
+        <CascadeUpdate>false</CascadeUpdate>
+        <EnforceConstraint>true</EnforceConstraint>
+        <NullableFKey>false</NullableFKey>
+        <id>2</id>
+        <fkparenttableid>3</fkparenttableid>
+        <fkchildtableid>7</fkchildtableid>
+        <foreignkeycolumnname>CreatedBy</foreignkeycolumnname>
+        <parentconstraintname>PK_Users</parentconstraintname>
+        <childconstraintname>FK_Builds_Users</childconstraintname>
+        <relationshiptype>1:n</relationshiptype>
+        <childaccessorname>Builds</childaccessorname>
+        <parentaccessorname>Users</parentaccessorname>
+        <childsetaccessor>public virtual</childsetaccessor>
+        <childgetaccessor>public virtual</childgetaccessor>
+        <parentsetaccessor>public virtual</parentsetaccessor>
+        <parentgetaccessor>public virtual</parentgetaccessor>
+        <ismandatory>true</ismandatory>
+        <disassociatechild>true</disassociatechild>
+        <cascadeupdate>false</cascadeupdate>
+        <cascadedelete>false</cascadedelete>
+        <enforceconstraint>true</enforceconstraint>
+        <nullablefkey>false</nullablefkey>
+      </Relation>
+      <Relation diffgr:id="Relation3" msdata:rowOrder="2">
+        <ID>3</ID>
+        <FKParentTableID>3</FKParentTableID>
+        <FKChildTableID>5</FKChildTableID>
+        <ForeignKeyColumnName>AuthorUserID</ForeignKeyColumnName>
+        <RelationshipType>1:n</RelationshipType>
+        <ChildAccessorName>Comments</ChildAccessorName>
+        <ParentAccessorName>Users</ParentAccessorName>
+        <ChildSetAccessor>public virtual</ChildSetAccessor>
+        <ChildGetAccessor>public virtual</ChildGetAccessor>
+        <ParentSetAccessor>public virtual</ParentSetAccessor>
+        <ParentGetAccessor>public virtual</ParentGetAccessor>
+        <IsMandatory>false</IsMandatory>
+        <DisassociateChild>true</DisassociateChild>
+        <CascadeDelete>false</CascadeDelete>
+        <CascadeUpdate>false</CascadeUpdate>
+        <EnforceConstraint>true</EnforceConstraint>
+        <NullableFKey>true</NullableFKey>
+        <id>3</id>
+        <fkparenttableid>3</fkparenttableid>
+        <fkchildtableid>5</fkchildtableid>
+        <foreignkeycolumnname>AuthorUserID</foreignkeycolumnname>
+        <parentconstraintname>PK_Users</parentconstraintname>
+        <childconstraintname>FK_Comments_Users</childconstraintname>
+        <relationshiptype>1:n</relationshiptype>
+        <childaccessorname>Comments</childaccessorname>
+        <parentaccessorname>Users</parentaccessorname>
+        <childsetaccessor>public virtual</childsetaccessor>
+        <childgetaccessor>public virtual</childgetaccessor>
+        <parentsetaccessor>public virtual</parentsetaccessor>
+        <parentgetaccessor>public virtual</parentgetaccessor>
+        <ismandatory>false</ismandatory>
+        <disassociatechild>true</disassociatechild>
+        <cascadeupdate>false</cascadeupdate>
+        <cascadedelete>false</cascadedelete>
+        <enforceconstraint>true</enforceconstraint>
+        <nullablefkey>true</nullablefkey>
+      </Relation>
+      <Relation diffgr:id="Relation4" msdata:rowOrder="3">
+        <ID>4</ID>
+        <FKParentTableID>2</FKParentTableID>
+        <FKChildTableID>6</FKChildTableID>
+        <ForeignKeyColumnName>GroupsAllowedToSet</ForeignKeyColumnName>
+        <RelationshipType>1:n</RelationshipType>
+        <ChildAccessorName>Tags</ChildAccessorName>
+        <ParentAccessorName>Groups</ParentAccessorName>
+        <ChildSetAccessor>public virtual</ChildSetAccessor>
+        <ChildGetAccessor>public virtual</ChildGetAccessor>
+        <ParentSetAccessor>public virtual</ParentSetAccessor>
+        <ParentGetAccessor>public virtual</ParentGetAccessor>
+        <IsMandatory>false</IsMandatory>
+        <DisassociateChild>true</DisassociateChild>
+        <CascadeDelete>false</CascadeDelete>
+        <CascadeUpdate>false</CascadeUpdate>
+        <EnforceConstraint>true</EnforceConstraint>
+        <NullableFKey>true</NullableFKey>
+        <id>4</id>
+        <fkparenttableid>2</fkparenttableid>
+        <fkchildtableid>6</fkchildtableid>
+        <foreignkeycolumnname>GroupsAllowedToSet</foreignkeycolumnname>
+        <parentconstraintname>PK_Groups</parentconstraintname>
+        <childconstraintname>FK_Tags_Groups</childconstraintname>
+        <relationshiptype>1:n</relationshiptype>
+        <childaccessorname>Tags</childaccessorname>
+        <parentaccessorname>Groups</parentaccessorname>
+        <childsetaccessor>public virtual</childsetaccessor>
+        <childgetaccessor>public virtual</childgetaccessor>
+        <parentsetaccessor>public virtual</parentsetaccessor>
+        <parentgetaccessor>public virtual</parentgetaccessor>
+        <ismandatory>false</ismandatory>
+        <disassociatechild>true</disassociatechild>
+        <cascadeupdate>false</cascadeupdate>
+        <cascadedelete>false</cascadedelete>
+        <enforceconstraint>true</enforceconstraint>
+        <nullablefkey>true</nullablefkey>
+      </Relation>
+      <Relation diffgr:id="Relation5" msdata:rowOrder="4">
+        <ID>5</ID>
+        <FKParentTableID>2</FKParentTableID>
+        <FKChildTableID>3</FKChildTableID>
+        <ForeignKeyColumnName>GroupID</ForeignKeyColumnName>
+        <RelationshipType>1:n</RelationshipType>
+        <ChildAccessorName>Users</ChildAccessorName>
+        <ParentAccessorName>Groups</ParentAccessorName>
+        <ChildSetAccessor>public virtual</ChildSetAccessor>
+        <ChildGetAccessor>public virtual</ChildGetAccessor>
+        <ParentSetAccessor>public virtual</ParentSetAccessor>
+        <ParentGetAccessor>public virtual</ParentGetAccessor>
+        <IsMandatory>false</IsMandatory>
+        <DisassociateChild>true</DisassociateChild>
+        <CascadeDelete>false</CascadeDelete>
+        <CascadeUpdate>false</CascadeUpdate>
+        <EnforceConstraint>true</EnforceConstraint>
+        <NullableFKey>true</NullableFKey>
+        <id>5</id>
+        <fkparenttableid>2</fkparenttableid>
+        <fkchildtableid>3</fkchildtableid>
+        <foreignkeycolumnname>GroupID</foreignkeycolumnname>
+        <parentconstraintname>PK_Groups</parentconstraintname>
+        <childconstraintname>FK_Users_Groups</childconstraintname>
+        <relationshiptype>1:n</relationshiptype>
+        <childaccessorname>Users</childaccessorname>
+        <parentaccessorname>Groups</parentaccessorname>
+        <childsetaccessor>public virtual</childsetaccessor>
+        <childgetaccessor>public virtual</childgetaccessor>
+        <parentsetaccessor>public virtual</parentsetaccessor>
+        <parentgetaccessor>public virtual</parentgetaccessor>
+        <ismandatory>false</ismandatory>
+        <disassociatechild>true</disassociatechild>
+        <cascadeupdate>false</cascadeupdate>
+        <cascadedelete>false</cascadedelete>
+        <enforceconstraint>true</enforceconstraint>
+        <nullablefkey>true</nullablefkey>
+      </Relation>
+      <RelationColumn diffgr:id="RelationColumn1" msdata:rowOrder="0">
+        <ID>1</ID>
+        <FKRelationID>1</FKRelationID>
+        <ParentColumnName>id</ParentColumnName>
+        <ChildColumnName>Status</ChildColumnName>
+        <OrdinalPosition>1</OrdinalPosition>
+        <NullableFKey>false</NullableFKey>
+        <ChildColumnIsPrimaryKey>false</ChildColumnIsPrimaryKey>
+        <id>1</id>
+        <fkrelationid>1</fkrelationid>
+        <parentcolumnname>id</parentcolumnname>
+        <childcolumnname>Status</childcolumnname>
+        <ordinalposition>1</ordinalposition>
+        <nullablefkey>false</nullablefkey>
+        <childcolumnisprimarykey>false</childcolumnisprimarykey>
+      </RelationColumn>
+      <RelationColumn diffgr:id="RelationColumn2" msdata:rowOrder="1">
+        <ID>2</ID>
+        <FKRelationID>2</FKRelationID>
+        <ParentColumnName>id</ParentColumnName>
+        <ChildColumnName>CreatedBy</ChildColumnName>
+        <OrdinalPosition>1</OrdinalPosition>
+        <NullableFKey>false</NullableFKey>
+        <ChildColumnIsPrimaryKey>false</ChildColumnIsPrimaryKey>
+        <id>2</id>
+        <fkrelationid>2</fkrelationid>
+        <parentcolumnname>id</parentcolumnname>
+        <childcolumnname>CreatedBy</childcolumnname>
+        <ordinalposition>1</ordinalposition>
+        <nullablefkey>false</nullablefkey>
+        <childcolumnisprimarykey>false</childcolumnisprimarykey>
+      </RelationColumn>
+      <RelationColumn diffgr:id="RelationColumn3" msdata:rowOrder="2">
+        <ID>3</ID>
+        <FKRelationID>3</FKRelationID>
+        <ParentColumnName>id</ParentColumnName>
+        <ChildColumnName>AuthorUserID</ChildColumnName>
+        <OrdinalPosition>1</OrdinalPosition>
+        <NullableFKey>true</NullableFKey>
+        <ChildColumnIsPrimaryKey>false</ChildColumnIsPrimaryKey>
+        <id>3</id>
+        <fkrelationid>3</fkrelationid>
+        <parentcolumnname>id</parentcolumnname>
+        <childcolumnname>AuthorUserID</childcolumnname>
+        <ordinalposition>1</ordinalposition>
+        <nullablefkey>true</nullablefkey>
+        <childcolumnisprimarykey>false</childcolumnisprimarykey>
+      </RelationColumn>
+      <RelationColumn diffgr:id="RelationColumn4" msdata:rowOrder="3">
+        <ID>4</ID>
+        <FKRelationID>4</FKRelationID>
+        <ParentColumnName>id</ParentColumnName>
+        <ChildColumnName>GroupsAllowedToSet</ChildColumnName>
+        <OrdinalPosition>1</OrdinalPosition>
+        <NullableFKey>true</NullableFKey>
+        <ChildColumnIsPrimaryKey>false</ChildColumnIsPrimaryKey>
+        <id>4</id>
+        <fkrelationid>4</fkrelationid>
+        <parentcolumnname>id</parentcolumnname>
+        <childcolumnname>GroupsAllowedToSet</childcolumnname>
+        <ordinalposition>1</ordinalposition>
+        <nullablefkey>true</nullablefkey>
+        <childcolumnisprimarykey>false</childcolumnisprimarykey>
+      </RelationColumn>
+      <RelationColumn diffgr:id="RelationColumn5" msdata:rowOrder="4">
+        <ID>5</ID>
+        <FKRelationID>5</FKRelationID>
+        <ParentColumnName>id</ParentColumnName>
+        <ChildColumnName>GroupID</ChildColumnName>
+        <OrdinalPosition>1</OrdinalPosition>
+        <NullableFKey>true</NullableFKey>
+        <ChildColumnIsPrimaryKey>false</ChildColumnIsPrimaryKey>
+        <id>5</id>
+        <fkrelationid>5</fkrelationid>
+        <parentcolumnname>id</parentcolumnname>
+        <childcolumnname>GroupID</childcolumnname>
+        <ordinalposition>1</ordinalposition>
+        <nullablefkey>true</nullablefkey>
+        <childcolumnisprimarykey>false</childcolumnisprimarykey>
+      </RelationColumn>
+      <Table diffgr:id="Table1" msdata:rowOrder="0">
+        <ID>7</ID>
+        <FKDatabaseID>1</FKDatabaseID>
+        <Name>Builds</Name>
+        <AllowNew>true</AllowNew>
+        <IsLookupTable>false</IsLookupTable>
+        <GenerateCodeFor>true</GenerateCodeFor>
+        <AccessorName>Builds</AccessorName>
+        <GenerateSampleCode>false</GenerateSampleCode>
+        <id>7</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>Builds</name>
+        <allownew>true</allownew>
+        <islookuptable>false</islookuptable>
+        <generatecodefor>true</generatecodefor>
+        <accessorname>Builds</accessorname>
+        <generatesamplecode>false</generatesamplecode>
+      </Table>
+      <Table diffgr:id="Table2" msdata:rowOrder="1">
+        <ID>4</ID>
+        <FKDatabaseID>1</FKDatabaseID>
+        <Name>BuildStatus</Name>
+        <AllowNew>true</AllowNew>
+        <IsLookupTable>false</IsLookupTable>
+        <GenerateCodeFor>true</GenerateCodeFor>
+        <AccessorName>BuildStatus</AccessorName>
+        <GenerateSampleCode>false</GenerateSampleCode>
+        <id>4</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>BuildStatus</name>
+        <allownew>true</allownew>
+        <islookuptable>false</islookuptable>
+        <generatecodefor>true</generatecodefor>
+        <accessorname>BuildStatus</accessorname>
+        <generatesamplecode>false</generatesamplecode>
+      </Table>
+      <Table diffgr:id="Table3" msdata:rowOrder="2">
+        <ID>5</ID>
+        <FKDatabaseID>1</FKDatabaseID>
+        <Name>Comments</Name>
+        <AllowNew>true</AllowNew>
+        <IsLookupTable>false</IsLookupTable>
+        <GenerateCodeFor>true</GenerateCodeFor>
+        <AccessorName>Comments</AccessorName>
+        <GenerateSampleCode>false</GenerateSampleCode>
+        <id>5</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>Comments</name>
+        <allownew>true</allownew>
+        <islookuptable>false</islookuptable>
+        <generatecodefor>true</generatecodefor>
+        <accessorname>Comments</accessorname>
+        <generatesamplecode>false</generatesamplecode>
+      </Table>
+      <Table diffgr:id="Table4" msdata:rowOrder="3">
+        <ID>2</ID>
+        <FKDatabaseID>1</FKDatabaseID>
+        <Name>Groups</Name>
+        <AllowNew>true</AllowNew>
+        <IsLookupTable>false</IsLookupTable>
+        <GenerateCodeFor>true</GenerateCodeFor>
+        <AccessorName>Groups</AccessorName>
+        <GenerateSampleCode>false</GenerateSampleCode>
+        <id>2</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>Groups</name>
+        <allownew>true</allownew>
+        <islookuptable>false</islookuptable>
+        <generatecodefor>true</generatecodefor>
+        <accessorname>Groups</accessorname>
+        <generatesamplecode>false</generatesamplecode>
+      </Table>
+      <Table diffgr:id="Table5" msdata:rowOrder="4">
+        <ID>1</ID>
+        <FKDatabaseID>1</FKDatabaseID>
+        <Name>Platforms</Name>
+        <AllowNew>true</AllowNew>
+        <IsLookupTable>false</IsLookupTable>
+        <GenerateCodeFor>true</GenerateCodeFor>
+        <AccessorName>Platforms</AccessorName>
+        <GenerateSampleCode>false</GenerateSampleCode>
+        <id>1</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>Platforms</name>
+        <allownew>true</allownew>
+        <islookuptable>false</islookuptable>
+        <generatecodefor>true</generatecodefor>
+        <accessorname>Platforms</accessorname>
+        <generatesamplecode>false</generatesamplecode>
+      </Table>
+      <Table diffgr:id="Table6" msdata:rowOrder="5">
+        <ID>8</ID>
+        <FKDatabaseID>1</FKDatabaseID>
+        <Name>sysdiagrams</Name>
+        <AllowNew>true</AllowNew>
+        <IsLookupTable>false</IsLookupTable>
+        <GenerateCodeFor>true</GenerateCodeFor>
+        <AccessorName>sysdiagrams</AccessorName>
+        <GenerateSampleCode>false</GenerateSampleCode>
+        <id>8</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>sysdiagrams</name>
+        <allownew>true</allownew>
+        <islookuptable>false</islookuptable>
+        <generatecodefor>true</generatecodefor>
+        <accessorname>sysdiagrams</accessorname>
+        <generatesamplecode>false</generatesamplecode>
+      </Table>
+      <Table diffgr:id="Table7" msdata:rowOrder="6">
+        <ID>6</ID>
+        <FKDatabaseID>1</FKDatabaseID>
+        <Name>Tags</Name>
+        <AllowNew>true</AllowNew>
+        <IsLookupTable>false</IsLookupTable>
+        <GenerateCodeFor>true</GenerateCodeFor>
+        <AccessorName>Tags</AccessorName>
+        <GenerateSampleCode>false</GenerateSampleCode>
+        <id>6</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>Tags</name>
+        <allownew>true</allownew>
+        <islookuptable>false</islookuptable>
+        <generatecodefor>true</generatecodefor>
+        <accessorname>Tags</accessorname>
+        <generatesamplecode>false</generatesamplecode>
+      </Table>
+      <Table diffgr:id="Table8" msdata:rowOrder="7">
+        <ID>3</ID>
+        <FKDatabaseID>1</FKDatabaseID>
+        <Name>Users</Name>
+        <AllowNew>true</AllowNew>
+        <IsLookupTable>false</IsLookupTable>
+        <GenerateCodeFor>true</GenerateCodeFor>
+        <AccessorName>Users</AccessorName>
+        <GenerateSampleCode>false</GenerateSampleCode>
+        <id>3</id>
+        <fkdatabaseid>1</fkdatabaseid>
+        <owner>dbo</owner>
+        <name>Users</name>
+        <allownew>true</allownew>
+        <islookuptable>false</islookuptable>
+        <generatecodefor>true</generatecodefor>
+        <accessorname>Users</accessorname>
+        <generatesamplecode>false</generatesamplecode>
+      </Table>
+    </OrmDataSet>
+  </diffgr:diffgram>
+</DataSet>

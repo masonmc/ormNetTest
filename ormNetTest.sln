@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ormNetTest", "ormNetTest\ormNetTest.csproj", "{88FBD719-439D-4986-8C53-F3A57110001F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildWolfSandboxBiz", "BuildWolfSandboxBiz\BuildWolfSandboxBiz.csproj", "{501548B9-7E8F-4A7B-A8C6-E96FF35DC953}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88FBD719-439D-4986-8C53-F3A57110001F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88FBD719-439D-4986-8C53-F3A57110001F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88FBD719-439D-4986-8C53-F3A57110001F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88FBD719-439D-4986-8C53-F3A57110001F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{501548B9-7E8F-4A7B-A8C6-E96FF35DC953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501548B9-7E8F-4A7B-A8C6-E96FF35DC953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501548B9-7E8F-4A7B-A8C6-E96FF35DC953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501548B9-7E8F-4A7B-A8C6-E96FF35DC953}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

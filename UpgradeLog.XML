@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ormNetTest">
+</Property><Property Name="Solution File" Value="C:\mycode\ormNetTest\ormNetTest.sln">
+</Property><Property Name="Date" Value="Thursday, November 06, 2008">
+</Property><Property Name="Time" Value="17:41:22 PM">
+</Property></Properties><Event ErrorLevel="0" Project="BuildWolfSandboxBiz" Source="BuildWolfSandboxBiz\BuildWolfSandboxBiz.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BuildWolfSandboxBiz" Source="BuildWolfSandboxBiz\BuildWolfSandboxBiz.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BuildWolfSandboxBiz" Source="BuildWolfSandboxBiz\BuildWolfSandboxBiz.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
